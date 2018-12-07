@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<title>Press Badge</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<meta content="" name="author">
+	<meta content="on" http-equiv="cleartype">
+	<link href="/favicon.ico" rel="shortcut icon"><!-- Stylesheets -->
+	<link href="css/custom.css" media="all" rel="stylesheet">
+	<link href="css/print.css" media="all" rel="stylesheet">
+	<link href="css/col.css" media="all" rel="stylesheet">
+	<link href="css/grid.css" media="all" rel="stylesheet">
+</head>
+<body>
+	<div class="section group" id="printArea">
+		<div class="col container press">
+			<div class="pressBadge">
+				<!-- Profile -->
+				<div class="profile"><img alt="prof" class=" imgholder" src="img/test.jpg"></div><!-- vertical text -->
+				<div class="idvalidate">
+					<div class="id verticaltext">
+						ID: 2715e2ae-e2ce-4875-a2be-0fffc50bf316<br>
+						to validate contact 0724999236
+					</div>
+				</div><!-- user BIO -->
+				<div class="bio">
+					<div class="name">
+						Vytas <span class="bluetext">Bradunas</span>
+					</div>
+					<div class="occupation">
+						WRITER
+					</div>
+					<div class="date">
+						July 2018
+					</div>
+				</div>
+			</div><!-- blue shape -->
+			<div class="blu"></div><!--logo -->
+			<div class="logo"><img alt="logo" class="img" src="img/logo.png"></div><!-- footer -->
+			<div class="footer">
+				PRESS
+			</div>
+		</div>
+	</div><!-- print button -->
+	<center>
+		<input class="btn" onclick="printDiv('printArea')" type="button" value="print your badge">
+	</center><!-- print script -->
+	<script>
+	       function printDiv(divName) { 
+	               var printContents = document.getElementById(divName).innerHTML;
+	                    var originalContents = document.body.innerHTML;
+	                    document.body.innerHTML = printContents;
+	                    window.print();
+	                    document.body.innerHTML = originalContents;
+	       }
+	</script>
+</body>
+</html>

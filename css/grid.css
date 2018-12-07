@@ -1,0 +1,40 @@
+/*  GRID OF container   ============================================================================= */
+
+.container {
+	width: 30%;
+}
+@media only screen and (max-width: 450px) {
+	.container {
+		width: 100%;
+	}
+	.idvalidate {
+		display: none !important;
+	}
+	.name {
+		font-size: 20px;
+	}
+	.footer {
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.container {
+		width: 100%;
+	}
+	.id {
+		font-size: 10px;
+	}
+	.idvalidate {
+		float: right;
+		margin-left: auto;
+		margin-right: -90px;
+		margin-top: -100px;
+		display: block;
+		/* height: 100%; */
+	}
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 70%;
+	}
+}
